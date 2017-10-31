@@ -2,12 +2,12 @@
 
 /* Transition
 -------------------------- */
-$--all-transition: all .3s cubic-bezier(.645,.045,.355,1);
-$--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
-$--fade-linear-transition: opacity 200ms linear;
-$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
-$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
-$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
+$--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--fade-linear-transition: opacity 200ms linear !default;
+$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms !default;
+$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 
 /* Colors
 -------------------------- */
@@ -80,6 +80,7 @@ $--fill-base: $--color-white;
 
 /* Font
 -------------------------- */
+$--font-path: 'fonts' !default;
 $--font-size-base: 14px;
 $--font-size-small: 13px;
 $--font-size-large: 18px;
@@ -101,7 +102,7 @@ $--index-popper: 2000;
 -------------------------- */
 $--disabled-fill-base: $--background-color-base;
 $--disabled-color-base: $--color-text-placeholder;
-$--disabled-border-base: $--border-color-lighter;
+$--disabled-border-base: $--border-color-light;
 
 /* Icon
 -------------------------- */
@@ -498,9 +499,9 @@ $--popover-fill: $--color-white;
 $--popover-font-size: $--font-size-base;
 $--popover-border-color: $--border-color-lighter;
 $--popover-arrow-size: 6px;
-$--popover-padding: 10px;
-$--popover-padding-large: 28px 34px;
-$--popover-title-font-size: 18px;
+$--popover-padding: 12px;
+$--popover-padding-large: 18px 20px;
+$--popover-title-font-size: 16px;
 $--popover-title-color: $--color-text-primary;
 
 /* Tooltip
